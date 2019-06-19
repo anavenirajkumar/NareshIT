@@ -1,0 +1,22 @@
+body{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+h1{
+    font-family: "Comic Sans MS",sans-serif;
+}
+nav{
+    background-color: black;
+    padding: 5px;
+}
+nav a{
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    background-color: orangered;
+    color: white;
+}

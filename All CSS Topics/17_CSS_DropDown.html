@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS DropDown</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .dropdown_button{
+            background-image: url("img/image5.jpeg");
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 25px;
+            padding: 14px 65px;
+            box-shadow: 0 0 5px black;
+        }
+        .dropdown_list{
+            background-image: url("img/image5.jpeg");
+            width: 222px;
+            box-shadow: 0 0 5px black;
+            text-align: center;
+            display: none;
+            position: absolute;
+        }
+        .dropdown_list a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+        }
+        .dropdown_list a:hover{
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        /* ------- for dropdown effect -------- */
+        .dropdown:hover .dropdown_list{
+            display: block;
+        }
+        .dropdown{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="dropdown_button">Courses</button>
+        <div class="dropdown_list">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">JQuery</a>
+            <a href="#">AJAX</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">Angular JS</a>
+        </div>
+    </div>
+</body>
+</html>

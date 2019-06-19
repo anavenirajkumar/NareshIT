@@ -1,0 +1,59 @@
+.dropdown-item:hover{
+    background-color: black;
+    color: white !important;
+}
+.bg-teal , .btn-teal{
+    background-color:#0c3636 !important;
+}
+.text-teal{
+    color:#0c3636 !important;
+}
+.p-img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0c3636;
+}
+.carousel .carousel-indicators li {
+    max-width: 30px;
+    height: 5px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 0% !important;
+    cursor: pointer;
+}
+.c_img{
+    box-shadow: 0 0 10px #0c3636;
+    border-radius: 10px;
+}
+
+.t_card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0c3636;
+    transition: all 0.5s;
+}
+.t_img{
+    box-shadow: 0 0 10px #0c3636;
+    margin-top: -60px;
+}
+.t_card:hover{
+    background-color: #0c3636;
+    transform: perspective(400px) rotateY(10deg);
+}
+.t_card:hover h3 , .t_card:hover p , .t_card:hover .fab{
+    color: white !important;
+}
+.s_card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0c3636;
+    transition: all 0.5s;
+}
+.s_card:hover{
+    background-color: #0c3636;
+    transform: perspective(400px) rotateY(-10deg);
+}
+
+.s_card:hover h3 , .s_card:hover p , .s_card:hover .fa , .s_card:hover .fab{
+    color: white !important;
+}
+.c_btn{
+    width: 500px !important;
+}

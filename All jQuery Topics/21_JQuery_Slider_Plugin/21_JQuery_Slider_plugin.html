@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <!-- Plugin Files -->
+    <link rel="stylesheet" href="plugin/imagelightbox.css">
+    <link rel="stylesheet" href="01_styles.css">
+    <title>JQuery Slider Plugin</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Slider Plugin</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<!-- JQuery Slider Plugin -->
+<div class="container mt-4">
+    <div class="row no-gutters">
+        <div class="col-md-3">
+            <a href="../img/image1.jpg" data-imagelightbox="demo">
+                <img src="../img/image1.jpg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="../img/image2.jpg" data-imagelightbox="demo">
+                <img src="../img/image2.jpg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="../img/image3.jpeg" data-imagelightbox="demo">
+                <img src="../img/image3.jpeg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="../img/image4.jpeg" data-imagelightbox="demo">
+                <img src="../img/image4.jpeg" class="img-fluid">
+            </a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <a href="../img/image5.jpeg" data-imagelightbox="demo">
+                <img src="../img/image5.jpeg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="../img/image6.jpeg" data-imagelightbox="demo">
+                <img src="../img/image6.jpeg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="../img/image7.jpeg" data-imagelightbox="demo">
+                <img src="../img/image7.jpeg" class="img-fluid">
+            </a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-3">
+            <a href="../img/image7.jpeg" data-imagelightbox="demo">
+                <img src="../img/image7.jpeg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="../img/image5.jpeg" data-imagelightbox="demo">
+                <img src="../img/image5.jpeg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="../img/image1.jpg" data-imagelightbox="demo">
+                <img src="../img/image1.jpg" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="../img/image4.jpeg" data-imagelightbox="demo">
+                <img src="../img/image4.jpeg" class="img-fluid">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+<!-- Plugin files -->
+<script src="plugin/imagelightbox.js"></script>
+<script src="01_app.js"></script>
+<script>
+    $('a[data-imagelightbox="demo"]').imageLightbox({
+        selector:       'a[data-imagelightbox]',
+        id:             'imagelightbox',
+        allowedTypes:   'png|jpg|jpeg|gif',
+        animationSpeed: 250,
+        activity:       false,
+        arrows:         true,
+        button:         true,
+        caption:        true,
+        enableKeyboard: true,
+        lockBody:       false,
+        navigation:     true,
+        overlay:        false,
+        preloadNext:    true,
+        quitOnEnd:      false,
+        quitOnImgClick: false,
+        quitOnDocClick: true,
+        quitOnEscKey:   true
+    });
+</script>
+</body>
+</html>
+

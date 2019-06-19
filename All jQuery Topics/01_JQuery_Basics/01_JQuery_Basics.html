@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="01_styles.css">
+    <title>JQuery Basics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Basics</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <h2>Inline JQuery</h2>
+    <div class="card" onclick="$(this).hide()">
+        <div class="card-body bg-danger text-white">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet, architecto consequuntur, culpa cupiditate deleniti, dolorum mollitia nihil obcaecati quas veniam veritatis! Consequuntur doloremque eaque eligendi ipsam minus numquam. Distinctio in ipsum omnis qui quod! Dignissimos nulla, pariatur! Facere hic in nam nihil quam reprehenderit, similique unde veniam voluptatibus? Aliquid.</p>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Internal JQuery -->
+    <h2>Internal JQuery</h2>
+    <div class="card" id="green-card">
+        <div class="card-body bg-success text-white">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eos facere inventore minus, nemo nesciunt perferendis veritatis! Assumenda delectus eaque exercitationem inventore perferendis reprehenderit sit. Adipisci animi aperiam cum dignissimos doloremque facere harum incidunt iure nostrum velit. Alias cum necessitatibus nemo neque nulla quidem sit! Doloremque iure pariatur voluptate.</p>
+        </div>
+    </div>
+
+    <!-- External JQuery -->
+    <br>
+    <h2>External JQuery</h2>
+    <button class="btn btn-primary" id="blue-btn">HIDE</button>
+    <div class="card" id="blue-card">
+        <div class="card-body bg-primary text-white">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, at blanditiis delectus deleniti eaque exercitationem ipsam, iste laudantium nemo placeat quisquam reprehenderit rerum similique. Accusamus aspernatur blanditiis cumque, eligendi error esse nam! Minus, mollitia saepe! Asperiores atque debitis eaque est, incidunt itaque nulla qui quod tempore velit! Amet, architecto, dolorum!</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+<script src="01_app.js"></script>
+<script>
+    $('#green-card').click(function() {
+        $(this).hide();
+    });
+</script>
+</body>
+</html>
+

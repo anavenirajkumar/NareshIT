@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3D Transformation</title>
+   <!-- transform: perspective(500px)  rotateX(-20deg); Use 4 cards in a page -->
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            margin-bottom: 200px;
+            background-color: #3ccc3c;
+        }
+        button{
+            background-image: url("img/image1.jpg");
+            color: deeppink;
+            font-size: 40px;
+            border: none;
+            padding: 12px 35px;
+            margin-left: 100px;
+            box-shadow: 0 0 5px black;
+            transition: all 0.5s;
+        }
+        #rotatex:hover{
+            transform: perspective(400px) rotateX(-45deg);
+        }
+        #rotatey:hover{
+            transform: perspective(400px) rotateY(-20deg);
+        }
+        #rotatez:hover{
+            transform: perspective(400px) rotateZ(45deg);
+        }
+        #rotate3d:hover{
+            transform: rotate3d(1, 1, 1, 45deg);
+        }
+    </style>
+</head>
+<body>
+
+
+    <h3>rotateX(180deg)</h3>
+    <button id="rotatex">
+        rotateX
+    </button>
+
+    <br><br><hr>
+
+    <h3>rotateY(180deg)</h3>
+    <button id="rotatey">
+        rotateY
+    </button>
+
+    <br><br><hr>
+
+    <h3>rotateZ(180deg)</h3>
+    <button id="rotatez">
+        rotateZ
+    </button>
+
+    <br><br><hr>
+
+    <h3>rotate3d()</h3>
+    <button id="rotate3d">
+        rotate3d
+    </button>
+</body>
+</html>

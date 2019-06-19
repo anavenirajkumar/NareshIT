@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        /* define the simple div */
+        #simple{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border-radius: 50%;
+            border: 20px solid darkblue;
+            box-shadow: 0 0 10px black;
+            animation: simple 2s infinite linear;
+        }
+        /* Rules for simple animation */
+        @keyframes simple {
+            0% , 50%, 100%{
+                background-color: lightblue;
+                border-color: darkblue;
+            }
+            25%,75%{
+                background-color: darkblue;
+                border-color: lightblue;
+            }
+        }
+
+        #spin{
+             width: 100px;
+             height: 100px;
+             border: 20px solid lightgreen;
+             border-radius: 50%;
+             border-top: 20px solid darkgreen;
+             border-bottom: 20px solid blueviolet;
+             border-left: 20px solid orangered;
+             border-right: 20px solid black;
+             box-shadow: 0 0 10px black;
+             animation: spin 2s infinite linear;
+         }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        #news{
+            background-color: lightsalmon;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            border: 10px double darkred;
+            border-radius: 50px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 0 10px black;
+            overflow: hidden;
+        }
+        #news p{
+            margin: 0;
+            animation:  news 10s infinite linear;
+        }
+        @keyframes news {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 200px;
+            background: white url("img/image1.jpg") no-repeat fixed bottom;
+            position: relative;
+            box-shadow: 0 0 10px black;
+            animation: box 4s infinite linear;
+        }
+        @keyframes box {
+            0%{
+                top: 0;
+                left: 0;
+                transform: rotate(0deg);
+                border-radius: 0%;
+            }
+            25%{
+                top: 0;
+                left: 200px;
+                transform: rotate(90deg);
+                border-radius: 50%;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                transform: rotate(180deg);
+                border-radius: 0%;
+            }
+            75%{
+                top: 200px;
+                left: 0;
+                transform: rotate(270deg);
+                border-radius: 50%;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotate(360deg);
+                border-radius: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div id="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div id="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div id="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div id="box"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div id="football"></div>
+    <hr>
+
+</body>
+</html>

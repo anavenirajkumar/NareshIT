@@ -1,0 +1,82 @@
+body{
+    background-image: url("img/background1.jpg");
+    font-family: "Comic Sans MS",sans-serif;
+    color: white;
+    background-attachment: fixed;
+}
+h1{
+    font-size: 35px;
+    font-family: "Old English Text MT",sans-serif;
+    text-align: center;
+    text-shadow: 0 0 10px red;
+}
+fieldset{
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid white;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 0 10px black;
+}
+legend{
+    background-image: url("img/background2.jpg");
+    font-family: "Old English Text MT",sans-serif;
+    padding: 14px 25px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+table{
+    width: 100%;
+}
+td{
+    padding: 5px;
+}
+input[type='text'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='number']{
+    font-size: 18px;
+    height: 35px;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+}
+input[type='text']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='time']:focus,
+input[type='number']:focus,
+textarea:focus{
+    background-color: #c59b75;
+    box-shadow: 0 0 10px darkred;
+}
+textarea{
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    width: 210px;
+}
+select{
+    font-size: 20px;
+    height: 35px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+}
+.button{
+    background-image: url("img/background2.jpg");
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    font-size: 18px;
+    padding: 12px 45px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.button:hover{
+    box-shadow: 0 0 10px white;
+}

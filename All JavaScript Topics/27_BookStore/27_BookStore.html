@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome-5.8.2.css">
+    <link rel="stylesheet" href="css/27_styles.css">
+</head>
+<body>
+
+    <!-- display Error Message -->
+    <div id="msg-div">
+
+    </div>
+
+    <!-- Book Store Form -->
+    <section class="book-store-section">
+        <h2>Book Store</h2>
+        <form id="bookstore-form">
+            <div class="form-group">
+                <i class="fa fa-book"></i>
+                <input type="text" placeholder="Book Name" id="book_name">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-id-card"></i>
+                <input type="number" placeholder="ISBN Number" id="isbn">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-user-circle"></i>
+                <input type="text" placeholder="Author" id="author">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-list"></i>
+                <select id="category">
+                    <option value="">Select a Category</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Env Science">Env Science</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <i class="fa fa-paper-plane"></i>
+                <input type="submit" value="Add Book" id="submit-btn">
+            </div>
+        </form>
+    </section>
+
+    <!-- Book Store Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>ISBN Number</th>
+                <th>Author Name</th>
+                <th>Category Name</th>
+                <th>#</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+    </table>
+
+
+<script src="27_script.js"></script>
+</body>
+</html>

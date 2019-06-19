@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <!-- Plugin Files -->
+    <link rel="stylesheet" href="plugin/jquery.flipster.css">
+    <link rel="stylesheet" href="01_styles.css">
+    <title>JQuery Slider Plugin</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Slider Plugin</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+
+<!-- JQuery 3D Slider Plugin -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="coverflow">
+                    <ul class="flip-items">
+                        <li data-flip-title="Red">
+                            <img src="img/text1.gif">
+                        </li>
+                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                            <img src="img/text2.gif">
+                        </li>
+                        <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                            <img src="img/text3.gif">
+                        </li>
+                        <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                            <img src="img/text4.gif">
+                        </li>
+                        <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                            <img src="img/text5.gif">
+                        </li>
+                        <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+                            <img src="img/text6.gif">
+                        </li>
+                        <li data-flip-title="Cyan" data-flip-category="Blues">
+                            <img src="img/text7.gif">
+                        </li>
+                        <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+                            <img src="img/text8.gif">
+                        </li>
+                        <li data-flip-title="Deep Sea" data-flip-category="Greens">
+                            <img src="img/text9.gif">
+                        </li>
+                        <li data-flip-title="Apple" data-flip-category="Greens">
+                            <img src="img/text10.gif">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+<!-- Plugin files -->
+<script src="plugin/jquery.flipster.min.js"></script>
+<script src="01_app.js"></script>
+<script>
+    $("#coverflow").flipster();
+</script>
+</body>
+</html>
+

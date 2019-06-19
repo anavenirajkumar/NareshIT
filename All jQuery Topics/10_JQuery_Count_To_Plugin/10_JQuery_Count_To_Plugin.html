@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+    <title>JQuery Magnify Plugin</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Magnify Plugin</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<!-- Use the class name 'magnify-image' and give attr data-magnify-src="" for img  -->
+
+
+<section class="p-3 bg-warning text-white text-center mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="display-2">
+                    <span class="timer" data-from="0" data-to="1800"
+                          data-speed="5000" data-refresh-interval="50"></span>
+                </h1>
+                <h2> <i class="fa fa-users"></i> Students Trained</h2>
+            </div>
+            <div class="col-md-4">
+                <h1 class="display-2">
+                    <span class="timer" data-from="0" data-to="24785"
+                          data-speed="5000" data-refresh-interval="50"></span>
+                </h1>
+                <h2> <i class="fa fa-code"></i> Lines Of Code</h2>
+            </div>
+            <div class="col-md-4">
+                <h1 class="display-2">
+                    <span class="timer" data-from="0" data-to="547857"
+                          data-speed="5000" data-refresh-interval="50"></span>
+                </h1>
+                <h2> <i class="fa fa-download"></i> Downloads</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<!-- Count To JS plugin -->
+<script src="plugin/jquery.countTo.js"></script>
+<script src="10_app.js"></script>
+<script>
+    $('.timer').countTo();
+</script>
+</body>
+</html>

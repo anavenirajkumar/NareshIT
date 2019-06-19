@@ -1,0 +1,75 @@
+1) Convert the given numbers to String Number
+ Ex: 123 => ONE TWO THREE
+ 
+2) Convert the given Number to Reverse String Number
+Ex: 123 => THREE TWO ONE
+
+3) Convert the given number to Palindrome Number
+Ex: 12 => ONE TWO ONE
+Ex: 45 => FOUR FIVE FOUR
+
+4) Tringle String ONE 'GOOD'
+Ex: G
+    GO
+	GOO
+	GOOD
+	
+5) Tringle String TWO 'GOOD'
+Ex: GOOD
+    GOO
+	GO
+	G
+	
+6) Triangle String Three 'GOOD'
+Ex: GOOD
+     OOD
+      OD
+       D
+
+7) Triangle String Four 'GOOD'
+Ex:     D
+       OD
+	  OOD
+	 GOOD
+
+8) display triangle numbers '4'
+Ex: 1111
+    222
+    33
+    4
+
+9) display triangle numbers '4'
+Ex: 4444
+    333
+	22
+	1
+	
+10) display triangle numbers '4'
+Ex: 1234
+    123
+	12
+	1
+
+11) display triangle numbers '4'
+Ex: 1234
+     234
+	  34
+	   4
+	   
+12) display triangle number '5'
+Ex:     3
+      2 3 4
+	1 2 3 4 5
+      2 3 4
+        3
+
+	   
+	
+	
+
+	
+	   
+	
+	
+	
+ 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        table, th, td{
+            border: 2px solid blue;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+        table{
+            width: 100%;
+            box-shadow: 0 0 10px orangered;
+        }
+        #orange thead {
+            background-color: blueviolet;
+            color: white;
+        }
+        #orange tbody{
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h3> Simple Table </h3>
+<table>
+    <thead>
+    <tr>
+        <th>SL.NO</th>
+        <th>NAME</th>
+        <th>COMPANY</th>
+        <th>DESIGNATION</th>
+    </tr>
+    </thead>
+    <tbody>
+       <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Infosys</td>
+        <td>Manager</td>
+       </tr>
+    <tr>
+        <td>2</td>
+        <td>Wilson</td>
+        <td>Microsoft</td>
+        <td>Business manager</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Laura</td>
+        <td>Google</td>
+        <td>Business Analyst</td>
+    </tr>
+    </tbody>
+</table>
+
+    <!-- Table with Col Span -->
+    <h3> Table with Col Span </h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th>SL.NO</th>
+            <th>NAME</th>
+            <th colspan="2">COMPANY</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Infosys</td>
+            <td>Manager</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Wilson</td>
+            <td>Microsoft</td>
+            <td>Business manager</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Laura</td>
+            <td>Google</td>
+            <td>Business Analyst</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Table With Row Span -->
+    <h3> Table With Row Span </h3>
+    <table>
+        <thead>
+        <tr>
+            <th>SL.NO</th>
+            <th>NAME</th>
+            <th>COMPANY</th>
+            <th>DESIGNATION</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3">1</td>
+            <td>John</td>
+            <td>Infosys</td>
+            <td>Manager</td>
+        </tr>
+        <tr>
+
+            <td>Wilson</td>
+            <td>Microsoft</td>
+            <td>Business manager</td>
+        </tr>
+        <tr>
+
+            <td>Laura</td>
+            <td>Google</td>
+            <td>Business Analyst</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Custom Table with CSS -->
+    <h3> Custom Table with CSS </h3>
+    <table id="orange">
+        <thead>
+        <tr>
+            <th>SL.NO</th>
+            <th>NAME</th>
+            <th>COMPANY</th>
+            <th>DESIGNATION</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Infosys</td>
+            <td>Manager</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Wilson</td>
+            <td>Microsoft</td>
+            <td>Business manager</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Laura</td>
+            <td>Google</td>
+            <td>Business Analyst</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

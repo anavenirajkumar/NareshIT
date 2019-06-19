@@ -1,0 +1,18 @@
+body{
+    font-family: "Helvetica Neue",sans-serif;
+	font-size: 18px;
+}
+.dropdown-item:hover{
+    background-color: black;
+    color: white !important;
+}
+.bg-teal , .btn-teal{
+    background-color:#0c3636 !important;
+}
+.text-teal{
+    color:#0c3636 !important;
+}
+.p-img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0c3636;
+}

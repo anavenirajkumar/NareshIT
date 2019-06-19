@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Form</title>
+    <style>
+        form{
+            background: linear-gradient(45deg,black,#3ccc3c);
+            width: 280px;
+            text-align: center;
+            margin: auto;
+            font-family: Arial, sans-serif;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px grey;
+        }
+        form h2{
+            color: white;
+        }
+        .input-field{
+            text-align: center;
+            font-size: 18px;
+            margin: 5px;
+            height: 35px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+        .input-field:focus{
+            background-color: lightgreen;
+
+        }
+        #submit-btn{
+            background: linear-gradient(45deg,#3ccc3c,black);
+            color: white;
+            margin: 5px;
+            border: none;
+            box-shadow: 0 0 5px black;
+            padding: 10px 25px;
+            font-size: 18px;
+            width: 210px;
+            border-radius: 5px;
+        }
+        #submit-btn:hover{
+            background-color: forestgreen;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Register Here</h2>
+        <input type="text" placeholder="First Name" class="input-field">
+        <br>
+        <input type="text" placeholder="Last Name" class="input-field">
+        <br>
+        <input type="text" placeholder="User Name" class="input-field">
+        <br>
+        <input type="email" placeholder="Email" class="input-field">
+        <br>
+        <input type="password" placeholder="Password" class="input-field">
+        <br>
+        <input type="password" placeholder="Confirm Password" class="input-field">
+        <br>
+        <input type="submit" value="Register" id="submit-btn">
+    </form>
+
+</body>
+</html>

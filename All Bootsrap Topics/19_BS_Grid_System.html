@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+
+    <title>Grid System in Bootstrap4</title>
+    <style>
+        .text-teal{
+            color: #0b4740 !important;
+        }
+        .bg-teal{
+            background-color: #0b4740 !important;
+        }
+        .my-img{
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0b4740;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Grid System in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+    <!-- 3 col -->
+
+    <div class="container-fluid mt-4">
+        <div class="row text-center text-white">
+            <div class="col-sm-6 col-md-4 col-lg-6 col-xl-8 bg-primary p-3">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dignissimos distinctio eum explicabo facere id ipsa laudantium necessitatibus numquam quis. A ab aspernatur delectus eligendi, enim error illo inventore mollitia nam nulla odit omnis quidem repellendus, soluta unde velit veniam!</p>
+            </div>
+            <div class="col-sm-6 col-md-8 col-lg-6 col-xl-4 bg-warning p-3">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dignissimos distinctio eum explicabo facere id ipsa laudantium necessitatibus numquam quis. A ab aspernatur delectus eligendi, enim error illo inventore mollitia nam nulla odit omnis quidem repellendus, soluta unde velit veniam!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nested Grids -->
+    <div class="container-fluid mt-4">
+        <div class="row text-center text-white">
+            <div class="col-md-4 bg-primary p-3">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa deserunt, dolor error id illum inventore nesciunt omnis optio praesentium quidem quis suscipit voluptatum? Ad architecto corporis ea iure molestiae nostrum perferendis quaerat qui, reprehenderit saepe suscipit ut, velit voluptate!</p>
+            </div>
+            <div class="col-md-8 bg-secondary px-3">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa deserunt, dolor error id illum inventore nesciunt omnis optio praesentium quidem quis suscipit voluptatum? Ad architecto corporis ea iure molestiae nostrum perferendis quaerat qui, reprehenderit saepe suscipit ut, velit voluptate!</p>
+                <div class="row">
+                    <div class="col-md-6 bg-warning p-3">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis natus necessitatibus obcaecati quia saepe ullam. Dolorem facilis in maxime, odit quibusdam vel velit! A aut blanditiis culpa eaque esse eum ipsum labore nulla omnis porro quae sit, voluptatem voluptates.</p>
+                    </div>
+                    <div class="col-md-6 bg-success px-3">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem fugiat odio! Aliquam assumenda at blanditiis consequuntur debitis deserunt dignissimos, dolorum natus nostrum officiis perspiciatis provident quam quibusdam quos reiciendis reprehenderit rerum sapiente, tenetur veniam, veritatis? Aliquid id inventore suscipit.</p>
+                        <div class="row">
+                            <div class="col-md-6 bg-info p-3">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corporis delectus hic illum iste numquam porro provident quam quod tempora.</p>
+                            </div>
+                            <div class="col-md-6 bg-danger p-3">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corporis delectus hic illum iste numquam porro provident quam quod tempora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 1 -->
+    <section class="p-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fa fa-users fa-4x text-teal"></i>
+                    <h2>Best Faculty Members</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ipsam necessitatibus nihil, placeat quasi quis unde! Ad commodi numquam obcaecati?</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-code fa-4x text-teal"></i>
+                    <h2>Best Coding Skills</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ipsam necessitatibus nihil, placeat quasi quis unde! Ad commodi numquam obcaecati?</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-book fa-4x text-teal"></i>
+                    <h2>Best Course Material</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ipsam necessitatibus nihil, placeat quasi quis unde! Ad commodi numquam obcaecati?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---Example-2-->
+    <section class="p-3 bg-teal text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h1 class="display-4">We Provide Best Training for UI Technologies And MEAN Stack</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, amet aperiam cum distinctio, et iure mollitia nemo odio placeat reiciendis reprehenderit rerum sit, velit veritatis voluptate! Debitis iure modi nesciunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3 class="text-teal font-weight-bold">The Complete Java Course</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus atque cum deserunt distinctio dolores ea esse ex facere, ipsam minus nulla numquam perspiciatis quisquam similique sunt tenetur vel voluptas?</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis consequatur dicta dolorem harum quas quo! Commodi eligendi provident quasi?</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/image1.jpg" class="img-fluid my-img img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/image1.jpg" class="img-fluid my-img img-thumbnail">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-teal font-weight-bold">The Complete Java Course</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus atque cum deserunt distinctio dolores ea esse ex facere, ipsam minus nulla numquam perspiciatis quisquam similique sunt tenetur vel voluptas?</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis consequatur dicta dolorem harum quas quo! Commodi eligendi provident quasi?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="p-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3 class="text-teal font-weight-bold">The Complete Java Course</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus atque cum deserunt distinctio dolores ea esse ex facere, ipsam minus nulla numquam perspiciatis quisquam similique sunt tenetur vel voluptas?</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis consequatur dicta dolorem harum quas quo! Commodi eligendi provident quasi?</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/image2.jpg" class="img-fluid my-img img-thumbnail">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

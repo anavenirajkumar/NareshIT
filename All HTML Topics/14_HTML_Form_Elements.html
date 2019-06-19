@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 200px;
+        }
+        form{
+            background-color: aqua;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Simple Login Form -->
+    <h2>Simple Login Form</h2>
+    <form>
+        <label>Username</label>
+        <input type="text">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <!-- Login form with Table -->
+    <h2>Login Form with Table</h2>
+    <form>
+        <table>
+            <tr>
+                <td><lable>Username</lable></td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <lable>password</lable></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Select box with Options -->
+    <h2>Select Box with Options</h2>
+    <form>
+        <lable>Select a Technology</lable>
+        <select>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JAVASCRIPT</option>
+            <option value="">JQUERY</option>
+        </select>
+    </form>
+    <!-- Textarea box -->
+    <h2>Textarea box</h2>
+    <form>
+        <lable>Select a technology</lable>
+        <select>
+            <optgroup label="Languages">
+                <option>.Net</option>
+                <option>Python</option>
+                <option>PHP</option>
+            </optgroup>
+            <optgroup label="Script">
+                <option>Shell</option>
+                <option>JavaScript</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <!-- Text area box -->
+    <h2>Textarea box</h2>
+    <form>
+        <label>Your Message</label>
+        <textarea rows="5" cols="30" maxlength="100"></textarea>
+    </form>
+    <!-- Datalist (HTML5) -->
+    <h2>Datalist (HTML5)</h2>
+    <form>
+        <label>Select a Technology</label>
+        <input list="tiger">
+        <datalist id="tiger">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>JQuery</option>
+            <option>Bootstrap</option>
+            <option>React JS</option>
+        </datalist>
+    </form>
+</body>
+</html>

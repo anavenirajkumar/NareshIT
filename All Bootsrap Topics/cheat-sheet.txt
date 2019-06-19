@@ -1,0 +1,173 @@
+Basic typography
+----------------
+display-1
+display-2
+display-3
+display-4 ,
+font-weight-bold , 
+text-uppercase , 
+list-unstyled
+
+Text Alignments
+-----------------
+text-left , text-center, text-right
+text-sm-right
+text-md-right
+text-lg-right
+text-xl-right
+
+fixed-top , fixed-bottom 
+
+Floats
+-------
+float-left , float-right , float-none
+
+float-sm-left
+float-md-left
+float-lg-left
+float-xl-left
+
+Text colors
+-----------
+text-info
+text-primary
+text-secondary
+text-success
+text-warning
+text-danger
+text-white
+text-dark
+
+bg-colors
+----------
+bg-info
+bg-primary
+bg-secondary
+bg-success
+bg-warning
+bg-danger
+bg-white
+bg-dark
+
+Margins , paddings
+-----------------
+ml , mr , mt , mb , mx , my , m
+pl , pr , pt ,pb ,px , py ,p
+
+
+Break points
+--------------
+Mobile -> min-width:576px -> sm
+Tablet ->  min-width:768px -> md
+laptop -> min-width:992px -> lg
+x-large -> min-width:1200px -> xl
+
+Buttons
+-------
+btn-info
+btn-primary
+btn-secondary
+btn-success
+btn-warning
+btn-danger
+btn-white
+btn-dark,
+
+btn-outline-info
+btn-outline-primary
+btn-outline-secondary
+btn-outline-success
+btn-outline-warning
+btn-outline-danger
+btn-outline-white
+btn-outline-dark
+
+btn-lg , btn-sm , btn-block , btn-group , btn-toolbar
+
+List Groups
+-----------
+list-group , list-group-item , list-group-item-action
+list-group-item-info
+list-group-item-primary
+list-group-item-secondary
+list-group-item-success
+list-group-item-warning
+list-group-item-danger
+list-group-item-white
+list-group-item-dark
+
+Forms
+------
+form-group
+form-control
+
+Input Groups
+-------------
+input-group , input-group-prepend , input-group-append
+input-group-text
+
+Alerts
+-------
+alert , alert-link
+alert-info
+alert-primary
+alert-secondary
+alert-success
+alert-warning
+alert-danger
+alert-white
+alert-dark
+
+Tables
+-------
+table , table-hover , table-bodered , table-dark
+
+Cards
+------
+.card , card-header , card-body , card-footer
+card-img , card-title , card-subtitle
+
+Modal
+----
+.modal , modal-dialog , modal-content
+modal-header , modal-body , modal-footer
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

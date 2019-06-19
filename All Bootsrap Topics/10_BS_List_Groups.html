@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <style>
+        .breadcrumb{
+            background-color: lightblue;
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            color: red;
+            content: " -> ";
+        }
+    </style>
+    <title>Listgroups & Badges in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Listgroups & Badges in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+        
+        <!-- LIST GROUP -->
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action">My List Item One</li>
+            <li class="list-group-item list-group-item-action">My List Item Two</li>
+            <li class="list-group-item list-group-item-action">My List Item Three</li>
+            <li class="list-group-item list-group-item-action">My List Item Four</li>
+            <li class="list-group-item list-group-item-action">My List Item Five</li>
+        </ul>
+
+        <br><br>
+
+       <!-- CONTEXTUAL CLASSES -->
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-action list-group-item-info">My List Item One</li>
+        <li class="list-group-item list-group-item-action list-group-item-primary">My List Item Two</li>
+        <li class="list-group-item list-group-item-action list-group-item-secondary">My List Item Three</li>
+        <li class="list-group-item list-group-item-action list-group-item-success">My List Item Four</li>
+        <li class="list-group-item list-group-item-action list-group-item-warning">My List Item Five</li>
+        <li class="list-group-item list-group-item-action list-group-item-danger">My List Item Five</li>
+    </ul>
+
+        <br><br>
+
+        <!-- LIST GROUP WITH BADGES -->
+    <h1>Example heading <span class="badge badge-info">New</span></h1>
+    <h2>Example heading <span class="badge badge-primary">New</span></h2>
+    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+    <h4>Example heading <span class="badge badge-success">New</span></h4>
+    <h5>Example heading <span class="badge badge-warning">New</span></h5>
+    <h6>Example heading <span class="badge badge-danger">New</span></h6>
+        <br><br>
+
+        <!-- CUSTOM CONTENT -->
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-primary">
+                <div class="bg-primary text-white p-3">
+                    <h5>My Post One</h5>
+                    <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By Naveen Saggam</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-warning">
+                <div class="bg-warning text-white p-3">
+                    <h5>My Post One</h5>
+                    <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By Naveen Saggam</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-danger">
+                <div class="bg-danger text-white p-3">
+                    <h5>My Post One</h5>
+                    <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By Naveen Saggam</small>
+            </a>
+        </div>
+
+        <br><br>
+
+        <!-- BREADCRUMB -->
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
+
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

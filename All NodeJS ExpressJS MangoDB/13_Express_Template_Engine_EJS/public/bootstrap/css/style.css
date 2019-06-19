@@ -1,0 +1,10 @@
+/* Your custom styles */
+.carousel .carousel-indicators li {
+    height: 5px;
+    width: 30px;
+    border-radius: 0% !important;
+    cursor: pointer;
+}
+.bg-success , .btn-success{
+    background: linear-gradient(45deg,black,green) !important;
+}

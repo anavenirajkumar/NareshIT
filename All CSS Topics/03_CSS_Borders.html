@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin-bottom: 300px;
+        }
+        div{
+            background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+        }
+        #rounded-all{
+            border: 10px solid darkred;
+            border-radius: 20px;
+        }
+        #rounded-two{
+            border: 10px solid darkred;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        #movie{
+            border-top: 60px solid forestgreen;
+            border-right: 80px solid black;
+            border-bottom: 60px solid forestgreen;
+            border-left: 80px solid black;
+            padding: 0;
+            background-color: black;
+            box-shadow: 0 0 10px black;
+        }
+
+    </style
+</head>
+<body>
+
+<!-- BORDER TOP -->
+<div style="border-top: 10px solid darkred">
+    <h2>BORDER TOP</h2>
+</div>
+
+<!-- BORDER RIGHT -->
+<div style="border-right: 10px solid darkred">
+    <h2>BORDER RIGHT</h2>
+</div>
+
+<!-- BORDER BOTTOM -->
+<div style="border-bottom: 10px solid darkred">
+    <h2>BORDER BOTTOM</h2>
+</div>
+
+<!-- BORDER LEFT -->
+<div style="border-left: 10px solid darkred">
+    <h2>BORDER LEFT</h2>
+</div>
+
+<!-- BORDER ALL SIDES -->
+<div style="border: 10px solid darkred">
+    <h2>BORDER ALL</h2>
+</div>
+
+<!-- ROUNDER BORDER ALL SIDES -->
+<div id="rounded-all">
+    <h2>ROUNDED ALL</h2>
+</div>
+
+<!-- ROUNDED TWO SIDES -->
+<div id="rounded-two">
+    <h2>ROUNDED TWO</h2>
+</div>
+
+<!-- CUSTOM BORDER -->
+<div id="movie">
+    <iframe width="500" height="250" src="https://www.youtube.com/embed/68PY0O7XH7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+</body>
+</html>

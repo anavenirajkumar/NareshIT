@@ -1,0 +1,43 @@
+body{
+    margin-bottom: 200px;
+}
+section{
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+section h2{
+    padding: 10px;
+    color: white;
+}
+button{
+    font-size: 18px;
+    padding: 10px 25px;
+}
+select{
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+}
+#option{
+    font-weight: bold;
+    color: blue;
+    font-size: 20px;
+}
+input[type='text']{
+    font-size: 20px;
+    text-align: center;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+#text-msg{
+    color: black;
+}
+#img{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}

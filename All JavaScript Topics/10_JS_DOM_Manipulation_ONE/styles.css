@@ -1,0 +1,40 @@
+section{
+    padding: 15px;
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    padding: 14px 25px;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+table , th , td{
+    border: 2px solid orangered;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+table{
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 0 5px black;
+}
+table thead{
+    background-color: orangered;
+    color: white;
+}
+table tbody{
+    background-color: coral;
+    font-size: 20px;
+}
+.inputField{
+    font-size: 30px;
+    margin: 20px;
+    height: 50px;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+.inputField:focus{
+    border: 2px solid orangered;
+}

@@ -1,0 +1,25 @@
+.form-control{
+    font-size: 25px;
+}
+.bg-teal{
+    background-color: #00796b;
+}
+.text-teal{
+    color: #00796b;
+}
+.t_card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px blueviolet;
+}
+.bg-primary{
+    background: linear-gradient(45deg,black,#4285f4);
+}
+.bg-success{
+    background: linear-gradient(45deg,black,forestgreen);
+}
+.bg-warning{
+    background: linear-gradient(45deg,black,orangered);
+}
+.bg-danger{
+    background: linear-gradient(45deg,black,red);
+}

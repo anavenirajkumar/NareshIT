@@ -1,0 +1,52 @@
+div{
+    margin-top: 150px;
+    margin-left: 150px;
+}
+span{
+    box-shadow: 0 10px 10px black;
+    margin: 20px;
+    padding: 15px 25px;
+    font-family: "Comic Sans MS",sans-serif;
+    border-radius: 10px;
+    font-size: 25px;
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    animation: move 0.7s infinite alternate ;
+}
+@keyframes move {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+span:nth-child(1){
+    animation-delay: 0.1s;
+    background: linear-gradient(45deg,black,red);
+}
+span:nth-child(2){
+    animation-delay: 0.2s;
+    background: linear-gradient(45deg,black,blue);
+}
+span:nth-child(3){
+    animation-delay: 0.3s;
+    background: linear-gradient(45deg,black,green);
+}
+span:nth-child(4){
+    animation-delay: 0.4s;
+    background: linear-gradient(45deg,black,yellow);
+}
+span:nth-child(5){
+    animation-delay: 0.5s;
+    background: linear-gradient(45deg,black,purple);
+}
+span:nth-child(6){
+    animation-delay: 0.6s;
+    background: linear-gradient(45deg,black,teal);
+}
+span:nth-child(7){
+    animation-delay: 0.7s;
+    background: linear-gradient(45deg,black,orangered);
+}

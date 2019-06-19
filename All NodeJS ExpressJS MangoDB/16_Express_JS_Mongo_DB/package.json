@@ -1,0 +1,14 @@
+{
+  "name": "16_express_js_mongo_db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "16_app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.2.7"
+  }
+}

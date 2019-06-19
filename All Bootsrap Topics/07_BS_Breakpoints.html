@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Breakpoints Bootstrap4</title>
+    <style>
+        h2{
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+        /* Small Mobile Device */
+        @media (max-width: 575px) {
+            body{
+                background: linear-gradient(60deg,black,yellow);
+            }
+            h2:nth-child(1){
+                display: block;
+            }
+        }
+
+
+        /* Mobile Device */
+        @media (min-width: 576px) and (max-width: 767px) {
+            body{
+                background: linear-gradient(60deg,black,red);
+            }
+            h2:nth-child(2){
+                display: block;
+            }
+        }
+
+        /* Tablet Device */
+        @media (min-width: 768px) and (max-width: 991px){
+            body{
+                background: linear-gradient(60deg,black,blue);
+            }
+            h2:nth-child(3){
+                display: block;
+            }
+        }
+
+        /* Laptop Device */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            body{
+                background: linear-gradient(60deg,black,green);
+            }
+            h2:nth-child(4){
+                display: block;
+            }
+        }
+
+        /* x-Large Device */
+        @media (min-width: 1200px) {
+            body{
+                background: linear-gradient(60deg,black,purple);
+            }
+            h2:nth-child(5){
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand font-weight-bold display-1" href="#">Screen Size : <span id="span"></span></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+<!--######################## START HERE #########################-->
+
+    <div class="text-center">
+        <h2 class="text-white display-3">Small Mobile</h2>
+        <h2 class="text-white display-3">Mobile Screen</h2>
+        <h2 class="text-white display-3">Tablet Screen</h2>
+        <h2 class="text-white display-3">Laptop Screeen</h2>
+        <h2 class="text-white display-3">x-Large Screen</h2>
+        <img src="img/image2.jpeg">
+        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi aspernatur autem blanditiis consequatur dolor doloremque dolores eligendi esse est fugiat fugit hic in itaque laborum magni maxime, mollitia necessitatibus pariatur perspiciatis quidem repellendus sit temporibus ut veniam? Ab, odit.</p>
+    </div>
+    
+
+<!--######################## END HERE #########################-->
+</div><!-- ./container -->
+<div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+<script>
+    window.addEventListener('resize',function() {
+        let screenSize = window.innerWidth;
+        document.querySelector('#span').textContent = `${screenSize} px`;
+    });
+</script>
+</body>
+</html>

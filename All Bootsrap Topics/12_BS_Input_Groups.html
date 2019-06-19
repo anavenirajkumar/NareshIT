@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>InputGroups in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">InputGroups in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+
+    <!-- Prepend -->
+    <div class="input-group m-4">
+        <div class="input-group-prepend">
+            <span class="input-group-text bg-danger text-white">
+                <i class="fa fa-user-circle"></i>
+            </span>
+        </div>
+        <input type="text" class="form-control bg-dark text-white">
+    </div>
+
+    <!-- Append -->
+    <div class="input-group m-4">
+        <input type="text" class="form-control bg-dark text-white">
+        <div class="input-group-append">
+            <span class="input-group-text bg-danger text-white">
+                @infosys.com
+            </span>
+        </div>
+    </div>
+
+    <!-- Both -->
+    <div class="input-group m-4">
+        <div class="input-group-prepend">
+            <span class="input-group-text bg-success text-white">
+                <i class="fa fa-user-circle"></i>
+            </span>
+        </div>
+        <input type="text" class="form-control bg-light">
+        <div class="input-group-append">
+            <span class="input-group-text bg-success text-white">
+                @infosys.com
+            </span>
+        </div>
+    </div>
+
+    <div class="input-group m-4">
+        <div class="input-group-prepend">
+            <span class="input-group-text bg-warning">
+                <i class="fa fa-pen"></i>
+            </span>
+        </div>
+        <textarea class="form-control bg-light" aria-label="With textarea"></textarea>
+    </div>
+    <br>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

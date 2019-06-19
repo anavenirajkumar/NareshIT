@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Mixed Selectors</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        ul{
+            background-color: orange;
+        }
+        li{
+            color: white;
+            margin: 5px;
+        }
+        ul li:nth-child(1){
+            background-color: orangered;
+        }
+        ul li:nth-child(2){
+            background-color: darkblue;
+        }
+        ul li:nth-child(3){
+            background-color: green;
+        }
+        ul li:nth-child(4){
+            background-color: purple;
+        }
+
+        ol{
+            background-color: lightgreen;
+        }
+        ol li:nth-child(1){
+            background-color: forestgreen;
+        }
+        ol li:nth-child(2){
+            background-color: blue;
+        }
+        ol li:nth-child(3){
+            background-color: orangered;
+        }
+        ol li:nth-child(4){
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+    </ul>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+    </ol>
+
+</body>
+</html>

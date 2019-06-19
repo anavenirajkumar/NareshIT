@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="TDF-8">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="14_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+</head>
+<body>
+
+<audio id="clap-sound">
+    <source src="sounds/clap.wav" type="audio/wav">
+</audio>
+
+<audio id="congrats-sound">
+    <source src="sounds/congrats.wav" type="audio/wav">
+</audio>
+
+<!-- MAIN HEADER -->
+<header class="main-header">
+    <h1>UI Brains Typing Tester App</h1>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <section class="side-1-section">
+                <section class="text-section">
+                    <div class="text-section-div">
+                        <p id="original-text">Thanks for Learning UI Technologies.</p>
+                    </div>
+                </section>
+
+                <br>
+                <section class="text-area-section">
+                    <div class="text-area-div">
+                        <!-- Disable the Paste Option -->
+                        <textarea onpaste="return false" id="text-area" rows="4" cols="53" placeholder="The Clock starts when you starts typing.."></textarea>
+                    </div>
+                </section>
+
+                <br>
+                <section class="result-section">
+                    <div class="result-section-div">
+                        <span class="timer">
+                            <span id="minutes">00</span> Mins
+                            <span id="seconds">00</span> Seconds
+                            <span id="m-seconds">00</span> Milli Seconds
+                        </span>
+                        <div>
+                            <button type="button" id="reset">Reset</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Congratulations Section -->
+                <section class="cong-section">
+                    <div class="cong-section-div">
+                        <p>Congratulations !!</p>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="col-md-4 mt-4">
+            <section class="side-2-section">
+                <button class="btn btn-primary btn-block mt-2" onclick="changeText(0)">Lesson 1</button>
+                <button class="btn btn-success btn-block mt-2" onclick="changeText(1)">Lesson 2</button>
+                <button class="btn btn-warning btn-block mt-2" onclick="changeText(2)">Lesson 3</button>
+                <button class="btn btn-danger btn-block mt-2" onclick="changeText(3)">Lesson 4</button>
+                <button class="btn btn-indigo btn-block mt-2" onclick="changeText(4)">Lesson 5</button>
+                <button class="btn btn-pink btn-block mt-2" onclick="changeText(5)">Lesson 6</button>
+                <button class="btn btn-purple btn-block mt-2" onclick="changeText(6)">Lesson 7</button>
+                <button class="btn btn-secondary btn-block mt-2" onclick="changeText(7)">Lesson 8</button>
+                <button class="btn btn-primary btn-block mt-2" onclick="changeText(8)">Lesson 9</button>
+                <button class="btn btn-success btn-block mt-2" onclick="changeText(9)">Lesson 10</button>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<footer>
+    <h3>Copyright &copy; 2018 UIBrains.com</h3>
+    <p>All Rights Reserved</p>
+    <small>Developed & Maintained by Naveen Saggam</small>
+</footer>
+
+<script src="14_script.js"></script>
+</body>
+</html>

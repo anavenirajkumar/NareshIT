@@ -1,0 +1,28 @@
+HTML Practice
+-------------
+1) Practice Classroom course
+2) https://learn.freecodecamp.org/
+3) https://www.os-templates.com
+
+CSS Practice
+------------
+1) Practice Classroom Course
+2) https://learn.freecodecamp.org/
+3) https://templated.co/
+
+JavaScript Practice
+--------------------
+1) https://codingbat.com
+2) https://www.hackerrank.com/
+3) https://www.hackerearth.com/
+4) https://www.topcoder.com/
+5) https://www.codechef.com/
+
+
+
+
+
+
+
+
+

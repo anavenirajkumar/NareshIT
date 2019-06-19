@@ -1,0 +1,13 @@
+/* Your custom styles */
+.carousel .carousel-indicators li {
+    height: 5px;
+    width: 30px;
+    border-radius: 0% !important;
+    cursor: pointer;
+}
+.bg-danger , .btn-danger{
+    background: linear-gradient(90deg,red,darkred,red) !important;
+}
+.complaint-card{
+    box-shadow: 0 0 10px darkred;
+}

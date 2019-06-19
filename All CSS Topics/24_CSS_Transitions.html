@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-image: url("img/image6.jpeg");
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+        }
+        #t_width{
+            transition: width 2s;
+        }
+
+        #t_width:hover{
+            width: 300px;
+        }
+
+        #t_height{
+            transition: height 2s;
+        }
+        #t_height:hover{
+            height: 200px;
+        }
+
+        #t_both{
+            transition: all 1s;
+        }
+        #t_both:hover{
+            width: 200px;
+            height: 200px;
+        }
+
+        #t_rotate{
+            transition: all 2s;
+        }
+        #t_rotate:hover{
+            width: 300px;
+            transform: rotate(180deg);
+        }
+
+        #t_timing{
+            transition: all 4s ease-in-out;
+        }
+        #t_timing:hover{
+            width: 100%;
+        }
+
+        /* -------------- Image Zoom --------------- */
+        .zoom{
+            width: 600px;
+            height: 350px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            overflow: hidden;
+        }
+        .zoom img{
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            transition: all 0.5s;
+        }
+        .zoom:hover img{
+            transform: scale(1.2,1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Transition Width -->
+    <h2>Transition Width</h2>
+    <div id="t_width"></div>
+
+    <!-- Transition Height -->
+    <h2>Transition Height</h2>
+    <div id="t_height"></div>
+
+    <!-- Transition Both -->
+    <h2>Transition Both</h2>
+    <div id="t_both"></div>
+
+    <!-- Transition Rotate -->
+    <h2>Transition Rotate</h2>
+    <div id="t_rotate"></div>
+
+    <!-- Transition Timing Function -->
+    <h2>Transition Timing Function</h2>
+    <div id="t_timing"></div>
+
+    <!-- Image Zoom -->
+    <h2>Image Zoom</h2>
+    <figure class="zoom">
+        <img src="img/image5.jpeg">
+    </figure>
+
+<br><br><br>
+</body>
+</html>

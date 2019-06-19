@@ -1,0 +1,90 @@
+Create database connections
+---------------------------
+const mongodb = require('mongodb');
+const MongoClient = mongodb.MongoClient;
+const url = 'mongodb://127.0.0.1:27017/TodoApp';
+let _db;
+
+const mongoConnet = callback => {
+  MongoClient.connect(url).then(
+      client => {
+          console.log('connected...');
+         _db = client.db();
+         callback();
+      }
+  ).catch(err => {
+      console.log(err);
+      throw err;
+
+  });
+};
+
+const getDB = () => {
+    if(_db){
+        return _db;
+    }
+    throw  'No Database found';
+};
+
+exports.mongoConnet = mongoConnet;
+exports.getDB = getDB;
+
+call database when app starts
+--------------------------------
+const mongoConnect = require('../database/database');
+mongoConnect.mongoConnet(() => {
+    server.listen(port);
+});
+
+Fetch data from database
+---------------------------
+const getDB = require('../database/database').getDB;
+const db = getDB();
+db.collection('documents').find({}).toArray((err,todos) => {
+        if(err){
+            return console.log(err);
+        }
+        items = todos;
+        console.log(todos);
+        res.render('index', {title: 'Express EJS' , page:'home', items : items});
+    });
+	
+Insert Data to database
+------------------------
+const getDB = require('../database/database').getDB;
+
+const db = getDB();
+    db.collection('documents').insertOne({item : enteredItem},(err , data) => {
+        if(err) throw err;
+    });
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

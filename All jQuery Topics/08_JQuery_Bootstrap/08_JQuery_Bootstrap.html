@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="08_styles.css">
+    <style>
+        .bg-teal , .btn-teal{
+            background: linear-gradient(45deg,black,teal) !important;
+        }
+        .bg-purple{
+            background: linear-gradient(45deg,black,purple) !important;
+        }
+        .bg-success , .btn-success{
+            background: linear-gradient(45deg,black,green) !important;
+        }
+        .bg-warning , .btn-warning{
+            background: linear-gradient(45deg,black,orangered) !important;
+        }
+    </style>
+    <title>JQuery Bootstrap</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Bootstrap</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################  START HERE  #########################-->
+
+    <!-- change the form classes from bg-teal to bg-warning -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-center text-white">
+                    <div class="card-header bg-teal" id="form-card-header">
+                        <h3 class="card-title" id="card-title">Signup Here</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-teal btn-block" id="submit-button">Signup</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center text-white">
+                    <div class="card-header bg-purple ">
+                        <h3>Buttons</h3>
+                    </div>
+                    <div class="card-body">
+                        <a class="btn btn-success" id="login-button">1.Login</a>
+                        <a class="btn btn-warning" id="register-button">2.Register</a>
+                        <a class="btn btn-teal" id="signup-button">3.Signup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--########################  ENDS HERE   #########################-->
+</div>
+<div style="margin-top:500px;"></div>
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="08_app.js"></script>
+</body>
+</html>

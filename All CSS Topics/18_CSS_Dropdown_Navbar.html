@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Dropdown Navbar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-4.8.1.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav{
+            background-color: coral;
+            padding: 5px;
+            box-shadow: 0 0 10px black;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            display: inline-block;
+        }
+        nav a:hover{
+            background-color: darkred;
+            color: white;
+        }
+        .dropdown{
+            display: inline-block;
+        }
+        .dropdown-list{
+            position: absolute;
+            background-color: coral;
+            padding: 5px;
+            display: none;
+            width: 150px;
+        }
+        .dropdown-list a{
+            display: block;
+        }
+        .dropdown:hover .dropdown-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown Navbar -->
+    <nav>
+        <a href="#">
+           <i class="fa fa-home"></i> Home</a>
+        <a href="#">
+            <i class="fa fa-id-card-alt"></i> About Us</a>
+        <a href="#">
+           <i class="fa fa-envelope"></i> Contact Us</a>
+        <a href="#">
+           <i class="fa fa-graduation-cap"></i> Careers</a>
+        <div class="dropdown">
+            <a href="#">
+               <i class="fa fa-book"></i> Courses <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-list">
+                <a href="#">
+                   <i class="fa fa-coffee"></i> Java</a>
+                <a href="#">
+                   <i class="fab fa-windows"></i> .Net</a>
+                <a href="#">
+                   <i class="fa fa-code"></i> PHP</a>
+                <a href="#">
+                   <i class="fa fa-code-branch"></i> Python</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>

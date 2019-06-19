@@ -1,0 +1,16 @@
+body{
+    font-family: "Comic Sans MS",sans-serif;
+    text-align: center;
+    color: white;
+    background-color: teal;
+}
+h1{
+    text-shadow: 0 0 5px black;
+}
+table{
+    width: 100%;
+}
+img{
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}

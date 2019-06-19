@@ -1,0 +1,59 @@
+ul{
+    margin-top: 150px;
+    margin-left: 150px;
+}
+ul li{
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10px;
+    animation: fly 0.7s infinite alternate;
+}
+@keyframes fly {
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(3);
+    }
+}
+ul li:nth-child(1){
+    animation-delay: 0.1s;
+    background-color: darkred;
+    box-shadow: 0 0 5px darkred;
+}
+
+ul li:nth-child(2){
+    animation-delay: 0.1s;
+    background-color: forestgreen;
+    box-shadow: 0 0 5px forestgreen;
+}
+
+ul li:nth-child(3){
+    animation-delay: 0.2s;
+    background-color: blueviolet;
+    box-shadow: 0 0 5px blueviolet;
+}
+
+ul li:nth-child(4){
+    animation-delay: 0.3s;
+    background-color: yellow;
+    box-shadow: 0 0 5px yellow;
+}
+
+ul li:nth-child(5){
+    animation-delay: 0.4s;
+    background-color: purple;
+    box-shadow: 0 0 5px purple;
+}
+
+ul li:nth-child(6){
+    animation-delay: 0.5s;
+    background-color: orange;
+    box-shadow: 0 0 5px orange;
+}

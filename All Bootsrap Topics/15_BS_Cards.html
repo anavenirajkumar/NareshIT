@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <style>
+        .bg-teal{
+            background-color: #0f4949;
+        }
+        .text-teal{
+            color: #0f4949;
+        }
+    </style>
+    <title>Cards in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Cards in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+        
+
+       <!-- CARD WITH IMAGE -->
+        <div style="width:20rem" class="card">
+            <img src="img/card.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+                 <a href="#" class="btn btn-success">Read More</a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- CARD WITH HEADER -->
+        <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+                <h3>Ui Development</h3>
+            </div>
+            <div class="card-body">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque odio quis ratione temporibus veritatis voluptas voluptatem! Debitis in similique soluta? Accusantium adipisci aliquam amet consequatur delectus maxime modi nulla obcaecati, odio porro, quia quis quo repellendus soluta voluptatibus. Tempora.</p>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <!-- HEADER, FOOTER, BODY -->
+        <div class="card text-center">
+            <div class="card-header bg-success text-white">
+                <h3>Movies</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae cumque dolorem earum enim excepturi inventore, ipsam iste libero magnam nam omnis pariatur quos recusandae reprehenderit totam ullam vitae voluptate!</p>
+            </div>
+            <div class="card-footer">
+                <h3>for the Year : 2019</h3>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <br><br>
+
+        <!-- IMAGE OVERLAYS  card-img , card-img-overlay -->
+        <div class="card-img card text-white">
+            <img src="img/card_img.jpg" style="width: auto; height: 200px">
+            <div class="card-img-overlay">
+                <h4>Card title</h4>
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p><small>Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+        <br><br>
+
+         <div class="row">
+             <div class="col-md-3">
+                 <div class="card text-center">
+                     <div class="card-header bg-primary text-white">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <i class="fa fa-list fa-4x"></i>
+                            </div>
+                            <div class="col">
+                                <h3 class="display-3">08</h3>
+                                <h3>Tasks</h3>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="card-footer">
+                        <h4 class="text-primary">View Details <i class="fa fa-arrow-alt-circle-right"></i></h4>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-3">
+                 <div class="card text-center">
+                     <div class="card-header bg-success text-white">
+                         <div class="row align-items-center">
+                             <div class="col">
+                                 <i class="fa fa-sitemap fa-4x"></i>
+                             </div>
+                             <div class="col">
+                                 <h3 class="display-3">08</h3>
+                                 <h3>Tasks</h3>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card-footer">
+                         <h4 class="text-success">View Details <i class="fa fa-arrow-alt-circle-right"></i></h4>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-3">
+                 <div class="card text-center">
+                     <div class="card-header bg-teal text-white">
+                         <div class="row align-items-center">
+                             <div class="col">
+                                 <i class="fa fa-snowflake fa-4x"></i>
+                             </div>
+                             <div class="col">
+                                 <h3 class="display-3">08</h3>
+                                 <h3>Tasks</h3>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card-footer">
+                         <h4 class="text-teal">View Details <i class="fa fa-arrow-alt-circle-right"></i></h4>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-3">
+                 <div class="card text-center">
+                     <div class="card-header bg-warning text-white">
+                         <div class="row align-items-center">
+                             <div class="col">
+                                 <i class="fa fa-user-circle fa-4x"></i>
+                             </div>
+                             <div class="col">
+                                 <h3 class="display-3">08</h3>
+                                 <h3>Tasks</h3>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card-footer">
+                         <h4 class="text-warning">View Details <i class="fa fa-arrow-alt-circle-right"></i></h4>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+         <br><br>
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

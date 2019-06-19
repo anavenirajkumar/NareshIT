@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <style>
+        .dropdown-item:hover{
+            background-color: #ff3547;
+            color: white !important;
+        }
+    </style>
+    <title>Navbar in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Navbar in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- SIMPLE NAVBAR -->
+    <h3>SIMPLE NAVBAR</h3>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">Ui Brains</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#simpleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="simpleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Careers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+
+    <!-- NAVBAR WITH FORM -->
+    <h3>FORM NAVBAR</h3>
+    <nav class="navbar navbar-dark bg-success navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Ui Brains</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#formNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="formNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Careers</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control" placeholder="Search Here">
+                    <input type="submit" value="Search" class="btn btn-outline-white btn-sm">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR WITH DROPDOWN -->
+    <br><br>
+    <h3>DROPDOWN NAVBAR</h3>
+    <nav class="navbar navbar-dark bg-danger navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Ui Brains</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#dropNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="dropNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown">Courses <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Java</a>
+                            <a href="#" class="dropdown-item">.Net</a>
+                            <a href="#" class="dropdown-item">JavaScript</a>
+                            <a href="#" class="dropdown-item">Python</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control" placeholder="Search Here">
+                    <input type="submit" value="Search" class="btn btn-outline-white btn-sm">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- COLORS -->
+
+
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

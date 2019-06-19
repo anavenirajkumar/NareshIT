@@ -1,0 +1,36 @@
+section{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
+select{
+    font-size: 20px;
+}
+#span-1{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+#username{
+    font-size: 25px;
+    height: 35px;
+}
+#user-text{
+    font-size: 30px;
+    margin: 0;
+}
+textarea{
+    font-size: 20px;
+}
+#span-2{
+    font-size: 40px;
+    color: red;
+}
+#password{
+    font-size: 30px;
+}
+#check{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Attribute Selector</title>
+    <style>
+        input[type='text']{
+            background-color: lightblue;
+        }
+        input[type='text']:focus{
+            background-color: coral;
+        }
+        input[type='password']{
+            background-color: blueviolet;
+        }
+        input[type='password']:focus{
+            background-color: lightgreen;
+            color: white;
+        }
+        input[type='submit']{
+            background-color: forestgreen;
+            color: white;
+        }
+        input[type='submit']:hover{
+            background-color: red;
+            color: white;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <input  type="text" placeholder="First Name" >
+        <input  type="text" placeholder="Middle Name" >
+        <input  type="text" placeholder="Last Name" >
+        <br>
+        <input  type="password" placeholder="Password">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

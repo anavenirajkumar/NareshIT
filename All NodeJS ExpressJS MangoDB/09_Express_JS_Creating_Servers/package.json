@@ -1,0 +1,14 @@
+{
+  "name": "09_express_js_creating_servers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "09_app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM Events</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="#">JS DOM Events</a>
+</nav>
+
+<!-- SMS App -->
+<section class="sms-app">
+    <h2>SMS App</h2>
+    <form>
+        <textarea rows="5" cols="40" id="text-area" onkeyup="smsAppFunction()" maxlength="100"></textarea>
+    </form>
+    <h2>The Characters Remaining <span id="chars">100</span></h2>
+</section>
+
+<!-- Change Password -->
+<section class="change-password">
+    <h2>Change Password</h2>
+    <form>
+        <input type="password" placeholder="password here" id="pass-box">
+        <input type="checkbox" id="check" onchange="changePassword()"> Show Password
+    </form>
+</section>
+
+
+<!-- Likes App -->
+<section class="likes-app">
+    <h2>Likes App</h2>
+    <div class="buttons-section">
+        <div>
+            <button onclick="liked()"><i class="fas fa-thumbs-up"></i> Likes</button>
+            <h2 id="likes">0</h2>
+        </div>
+        <div>
+            <button onclick="disLiked()"><i class="fas fa-thumbs-down"></i> Dis likes</button>
+            <h2 id="dislikes">0</h2>
+        </div>
+    </div>
+    <h2>Total : <span id="total">0</span></h2>
+</section>
+
+
+<!-- Slider App -->
+<section class="slider-app">
+    <h2>Slider App</h2>
+    <div class="slider-section">
+        <button onclick="backwardButton()">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
+        <img src="../img/image7.jpeg" id="img" class="animated">
+        <button onclick="farwardButton()">
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+    </div>
+</section>
+
+<script src="11_script.js"></script>
+</body>
+</html>

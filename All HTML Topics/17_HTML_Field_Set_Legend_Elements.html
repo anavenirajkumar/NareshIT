@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fieldset Legend</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+            background-image: linear-gradient(to right, gray, whitesmoke, red);
+        }
+        table{
+            width: 100%;
+        }
+        table td{
+            padding: 5px;
+        }
+        fieldset{
+            border: 2px solid orangered;
+            box-shadow: 0 0 10px black;
+            padding: 15px;
+            margin: 20px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        legend{
+            background: orangered;
+            color: white;
+            padding: 14px 25px;
+            border: 2px solid white;
+            box-shadow: 0 0 10px violet;
+            border-bottom-left-radius: 25px;
+            border-top-right-radius: 25px;
+            font-family: "Old English Text MT",sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<!---Personal information-->
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text" required></td>
+                <td><label>Middle Name</label></td>
+                <td><input type="text"></td>
+                <td><label>Last Name</label></td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td><label> Father's Name</label></td>
+                <td><input type="text" required></td>
+                <td><label>Mother's Name</label></td>
+                <td><input type="text" required></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.bg-primary{
+    background: linear-gradient(45deg,black,blue);
+}
+.bg-warning{
+    background: linear-gradient(45deg,black,orangered);
+}
+.bg-teal{
+    background: linear-gradient(45deg,black,teal);
+}
+.c_card , .c_card .card-body{
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.c_card:hover{
+    transform: perspective(400px) rotateY(10deg);
+}

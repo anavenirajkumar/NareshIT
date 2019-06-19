@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+    <link rel="stylesheet" href="17_styles.css">
+    <title>Employee Registration</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Employee Registration</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card ">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3>Employee Registration</h3>
+                    </div>
+                    <form>
+                        <div class="card-body bg-light">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input required id="emp_name" type="text" class="form-control" placeholder="Employee Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input required id="emp_age" type="number" class="form-control" placeholder="Employee Age">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select required id="emp_desg" class="form-control">
+                                            <option value="">Select a Designation</option>
+                                            <option value="Software Engineer">Software Engineer</option>
+                                            <option value="Sr. Software Engineer">Sr. Software Engineer</option>
+                                            <option value="Technical Lead">Technical Lead</option>
+                                            <option value="Sr.Technical Lead">Sr.Technical Lead</option>
+                                            <option value="Project Manager">Project Manager</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select required id="job_location" class="form-control">
+                                            <option value="">Select Job Location</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Bangalore">Bangalore</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <input type="submit" value="Register" class="btn btn-primary btn-block">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header text-center bg-light">
+                        <h4>Employee Details</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table text-center table-hover">
+                            <thead class="bg-success text-white">
+                                <tr>
+                                    <th>EMP ID</th>
+                                    <th>EMPLOYEE NAME</th>
+                                    <th>EMPLOYEE AGE</th>
+                                    <th>EMPLOYEE DESIGNATION</th>
+                                    <th>JOB LOCATION</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table_body">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="17_app.js"></script>
+</body>
+</html>
+

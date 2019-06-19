@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Alignments</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        #container{
+            background-color: lightgrey;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .item{
+            background: linear-gradient(45deg,black,red);
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+<section id="container">
+
+    <article class="item">
+        <h2>Item 1</h2>
+    </article>
+
+    <article class="item">
+        <h2>Item 2</h2>
+    </article>
+
+    <article class="item">
+        <h2>Item 3</h2>
+    </article>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, sans-serif;
+}
+section{
+    background-color: lightgray;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+article{
+    background: linear-gradient(45deg,black,red);
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+/* ----------- Transformation 1 ----------- */
+.trans-1:hover{
+    transform: translateY(-20px);
+    background: linear-gradient(45deg,black,blue);
+}
+
+
+/* ----------- Transformation 2 ----------- */
+.trans-2:hover{
+    transform:skewX(20deg);
+    background: linear-gradient(45deg,black,blue);
+}
+
+
+/* ----------- Transformation 3 ----------- */
+.trans-3:hover{
+    transform:scale(1.2,1.2);
+    background: linear-gradient(45deg,black,blue);
+}
+
+/* ----------- Transformation 4 ----------- */
+.trans-4:hover{
+    transform:scale(0.8,0.8);
+    background: linear-gradient(45deg,black,blue);
+}
+
+
+/* ----------- Transformation 5 ----------- */
+.trans-5:hover{
+    transform:skewX(20deg) scale(1.2,1.2);
+    background: linear-gradient(45deg,black,blue);
+}
+
+
+/* ----------- Transformation 6 ----------- */
+.trans-6:hover{
+    transform: perspective(400px) rotateX(-20deg);
+    background: linear-gradient(45deg,black,blue);
+}
+
+
+/* ----------- Transformation 7 ----------- */
+.trans-7:hover{
+    transform: perspective(400px) rotateY(20deg);
+    background: linear-gradient(45deg,black,blue);
+}
+
+/* ----------- Transformation 8 ----------- */
+.trans-8:hover{
+    transform: perspective(400px) rotate3d(1,1,1,45deg);
+    background: linear-gradient(45deg,black,blue);
+}

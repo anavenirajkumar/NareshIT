@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <title>JQuery Validator</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Validator</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<!-- JQuery Form Validation -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 m-auto">
+            <div class="card">
+                <div class="card-header blue-gradient-rgba text-white text-center">
+                    <h3>Registration</h3>
+                </div>
+                <div class="card-body bg-light">
+                    <form id="register-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="firstname" name="firstname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lastname" name="lastname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="User Name" id="username" name="username">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password" id="c_password" name="c_password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="check" name="check" value="agree" class="form-check-input"/>
+                            <label class="form-check-label">Please agree to our policy</label>
+                        </div>
+                        <input type="submit" value="Register" class="btn blue-gradient-rgba">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<!-- JQuery Validation -->
+<script src="plugin/jquery.validate.js"></script>
+<script src="18_app.js"></script>
+</body>
+</html>
+

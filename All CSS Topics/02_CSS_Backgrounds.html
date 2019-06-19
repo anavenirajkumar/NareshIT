@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+            margin-bottom: 300px;
+        }
+        #bgColor{
+            background-color: teal;
+        }
+        #bgImage{
+            box-shadow: 0 0 10px black;
+            width: 500px;
+            padding: 15px;
+            background-image: url("img/image4.jpeg");
+            color: white;
+        }
+
+        #bgPosition{
+            box-shadow: 0 0 10px black;
+            width: 500px;
+            height: 300px;
+            background: coral url("img/nature.jpg") no-repeat scroll top right;
+        }
+        #bgRepeat{
+            box-shadow: 0 0 10px black;
+            width: 500px;
+            height: 300px;
+            background: coral url("img/nature.jpg") repeat-y scroll top left;
+        }
+        #bgAttachment{
+            box-shadow: 0 0 10px black;
+            height: 200px;
+            background: white url("img/image5.jpeg") no-repeat fixed bottom;
+        }
+
+        #gradient-1{
+            padding: 20px;
+            color: white;
+            box-shadow: 0 0 10px black;
+            width: 500px;
+            background: linear-gradient(45deg,black,red);
+        }
+
+        #gradient-2{
+            padding: 20px;
+            color: white;
+            box-shadow: 0 0 10px black;
+            width: 500px;
+            background: linear-gradient(45deg,black,blue,red,green,yellow);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BACKGROUND COLOR -->
+    <h2 id="bgColor">I am Teal color Background</h2>
+
+    <!-- BACKGROUND IMAGE -->
+    <h2>BACKGROUND IMAGE</h2>
+    <div id="bgImage">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi architecto atque blanditiis, cupiditate delectus distinctio est et eum exercitationem ipsam labore laboriosam magni minus modi molestiae mollitia necessitatibus neque nihil optio perferendis quam quos sapiente sunt suscipit ullam vero?</p>
+    </div>
+
+    <!-- BACKGROUND ATTACHMENT -->
+    <h2>BACKGROUND ATTACHMENT</h2>
+    <div id="bgAttachment"></div>
+
+    <!-- BACKGROUND POSITION -->
+    <h2>BACKGROUND POSITION</h2>
+    <div id="bgPosition"></div>
+
+    <!-- BACKGROUND REPEAT -->
+    <h2>BACKGROUND REPEAT</h2>
+    <div id="bgRepeat"></div>
+
+    <!-- Gradient 1 -->
+    <h2>Gradient 1</h2>
+    <div id="gradient-1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse expedita minus non. Accusantium amet cum cumque distinctio eaque ipsum laudantium, omnis quasi, quidem totam velit voluptas. Fuga ratione sit ut. Blanditiis dolore et minus quibusdam voluptas. At doloremque illum ipsum.</p>
+    </div>
+
+    <!-- Gradient 2 -->
+    <h2>Gradient 2</h2>
+    <div id="gradient-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse expedita minus non. Accusantium amet cum cumque distinctio eaque ipsum laudantium, omnis quasi, quidem totam velit voluptas. Fuga ratione sit ut. Blanditiis dolore et minus quibusdam voluptas. At doloremque illum ipsum.</p>
+    </div>
+
+</body>
+</html>

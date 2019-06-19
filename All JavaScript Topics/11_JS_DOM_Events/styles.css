@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, sans-serif;
+    margin-bottom: 200px;
+}
+.sms-app , .change-password,.likes-app , .slider-app{
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    margin:20px auto;
+    box-shadow: 0 0 5px black;
+}
+.sms-app textarea{
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+.sms-app span{
+    font-size: 30px;
+    color: red;
+}
+.change-password #pass-box{
+    font-size: 20px;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+.change-password #check{
+    width: 20px;
+    height: 20px;
+}
+.likes-app{
+    display: flex;
+    flex-direction: column;
+}
+.buttons-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons-section button{
+    font-size: 18px;
+    padding: 14px 25px;
+
+    outline: none;
+}
+.buttons-section button:hover{
+    background-color: gray;
+    color: whitesmoke;
+}
+.buttons-section div{
+
+    padding: 10px;
+}
+
+.slider-app{
+    display: flex;
+    flex-direction: column;
+}
+.slider-app img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.slider-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-section button{
+    height: 50px;
+    margin: 10px;
+}

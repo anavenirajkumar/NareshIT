@@ -1,0 +1,9 @@
+.my-text{
+    height : 200px;
+    border-radius:10px;
+    font-size:30px;
+
+}
+.my-text:focus{
+    border:2px solid #00796b;
+}

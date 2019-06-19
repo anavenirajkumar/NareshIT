@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h1{
+            display: none;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        /* Small Mobile Screen */
+        @media (max-width: 500px) {
+            body{
+                background: linear-gradient(45deg,black,red);
+            }
+            h1:nth-child(1){
+                display: block;
+            }
+        }
+
+        /* Mobile Screen */
+        @media (min-width: 501px) and (max-width: 650px) {
+            body{
+                background: linear-gradient(45deg,black,green);
+            }
+            h1:nth-child(2){
+                display: block;
+            }
+        }
+
+        /* Tablet Screen */
+        @media (min-width: 651px) and (max-width: 800px) {
+            body{
+                background: linear-gradient(45deg,black,blue);
+            }
+            h1:nth-child(3){
+                display: block;
+            }
+        }
+
+        /* Laptop Screen */
+        @media (min-width: 801px) and (max-width: 1000px) {
+            body{
+                background: linear-gradient(45deg,black,yellow);
+            }
+            h1:nth-child(4){
+                display: block;
+            }
+        }
+
+        /* x-Large Screen */
+        @media (min-width: 1001px){
+            body{
+                background: linear-gradient(45deg,black,purple);
+            }
+            h1:nth-child(5){
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Screen Size : <span id="span"></span> px</h2>
+    <div>
+        <h1>Small Mobile Screen</h1>
+        <h1>Mobile Screen</h1>
+        <h1>Tablet Screen</h1>
+        <h1>Laptop Screen</h1>
+        <h1>X-Large Screen</h1>
+    </div>
+    
+    <img src="img/image5.jpeg">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur maiores nam sequi! A at aut commodi dicta facere fugiat in inventore iure libero non qui quisquam quos repellendus, sunt ut velit voluptas voluptatibus. Accusamus adipisci beatae dignissimos doloribus dolorum est eveniet excepturi facilis fugit ipsum mollitia nobis perferendis, perspiciatis possimus quam qui quia quod recusandae rem veniam, voluptate voluptatem voluptates.</p>
+
+<script>
+    window.addEventListener('resize',function() {
+        let screenSize = window.innerWidth;
+        document.querySelector('#span').textContent = screenSize;
+    });
+</script>
+</body>
+</html>
