@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Setup</title>
+    <link rel="stylesheet" href="bootsrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootsrap/css/mdb.css">
+    <link rel="stylesheet" href="bootsrap/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">  <!--image pyna captions ravadam-->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active animated jello">
+                    <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" alt="..." height="600px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-2">First slide label</h5>
+                        <p style="margin-bottom: 20%;">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item animated rotateIn">
+                    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" alt="..." height="600px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-2">Second slide label</h5>
+                        <p style="margin-bottom: 20%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item animated jackInTheBox">
+                    <img src="https://images.pexels.com/photos/1237119/pexels-photo-1237119.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="d-block w-100" alt="..."height="600px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-2">Third slide label</h5>
+                        <p style="margin-bottom: 20%;">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" ></span> -->
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="search">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button>
+                            <!-- <i class="fa fa-search"></i> -->
+                            subcribe
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+<!-- Carousel wrapper -->
+
+    <script src="bootsrap/js/jquery.js"></script>
+    <script src="bootsrap/js/popper.js"></script>
+    <script src="bootsrap/js/bootstrap.js"></script>
+    <script src="bootsrap/js/mdb.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval : 2000
+        });
+    </script>
+    <script>
+    //    $('#myCarousel').carousel({
+    //       interval: 2000,
+    //     })
+    </script>
+</body>
+</html>
